@@ -23,8 +23,8 @@ export default function NavBar({ title, mode, setMode, clrObj }) {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Nav.Link href="#">Home</Nav.Link>
-            <Nav.Link href="#">About</Nav.Link>
+            {/* <Nav.Link href="#">Home</Nav.Link>
+            <Nav.Link href="#">About</Nav.Link> */}
           </Nav>
 
           <CustomBadge type="primary" setMode={setMode} txt="Blue" />
