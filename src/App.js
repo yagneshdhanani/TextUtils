@@ -4,7 +4,7 @@ import "./App.css";
 
 import NavBar from "./components/NavBar";
 import TextForm from "./components/TextForm";
-import About from "./components/About";
+// import About from "./components/About";
 import CustomAlert from "./components/CustomAlert";
 
 const colorArr = [
