@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+// import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 
 import NavBar from "./components/NavBar";
@@ -84,27 +84,27 @@ function App() {
   };
 
   return (
-    <Router>
+    <>
       <NavBar mode={mode} setMode={setMode} clrObj={clrObj} title="TextUtils" />
       <CustomAlert alert={alert} />
-      <Routes>
+      {/* <Routes>
         <Route
           exact
           path="/"
-          element={
-            <TextForm
-              heading="Enter the text to analyze below"
-              mode={mode}
-              showAlert={showAlert}
-              clrObj={clrObj}
-            />
-          }
+          element={ */}
+      <TextForm
+        heading="Enter the text to analyze below"
+        mode={mode}
+        showAlert={showAlert}
+        clrObj={clrObj}
+      />
+      {/* }
         />
         <Route exact path="/about" element={<About />} />
 
-        {/* <Route path="*" element={<NotFound />} /> */}
-      </Routes>
-    </Router>
+        <Route path="*" element={<NotFound />} /> */}
+      {/* </Routes> */}
+    </>
   );
 }
 

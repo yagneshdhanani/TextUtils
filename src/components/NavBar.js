@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import PropTypes from "prop-types";
 
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import CustomBadge from "./CustomBadge";
 
 export default function NavBar({ title, mode, setMode, clrObj }) {
@@ -15,9 +15,7 @@ export default function NavBar({ title, mode, setMode, clrObj }) {
       style={{ backgroundColor: `${clrObj.backgroundColor}` }}
     >
       <Container fluid>
-        <Link class="navbar-brand" to="/">
-          {title}
-        </Link>
+        <Navbar.Brand href="#">{title}</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -25,18 +23,8 @@ export default function NavBar({ title, mode, setMode, clrObj }) {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <Link class="nav-link active" aria-current="page" to="/">
-                  Home
-                </Link>
-              </li>
-              <li class="nav-item">
-                <Link class="nav-link" to="/about">
-                  About
-                </Link>
-              </li>
-            </ul>
+            <Nav.Link href="#">Home</Nav.Link>
+            <Nav.Link href="#">About</Nav.Link>
           </Nav>
 
           <CustomBadge type="primary" setMode={setMode} txt="Blue" />
