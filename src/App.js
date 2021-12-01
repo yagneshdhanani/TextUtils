@@ -71,17 +71,15 @@ function App() {
       setAlert(null);
     }, 1000);
   };
-
+  const toggleMode = () => {
+    document.body.style.backgroundColor = clrObj.color;
+    showAlert(`${clrObj.name} Mode has been enabled!`, "success");
+  };
   useEffect(() => {
     toggleMode();
   }, [mode]);
 
   const clrObj = colorArr.find((cl) => cl.type === mode);
-
-  const toggleMode = () => {
-    document.body.style.backgroundColor = clrObj.color;
-    showAlert(`${clrObj.name} Mode has been enabled!`, "success");
-  };
 
   return (
     <>
