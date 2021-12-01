@@ -71,15 +71,17 @@ function App() {
       setAlert(null);
     }, 1000);
   };
+
+  const clrObj = colorArr.find((cl) => cl.type === mode);
+
   const toggleMode = () => {
     document.body.style.backgroundColor = clrObj.color;
     showAlert(`${clrObj.name} Mode has been enabled!`, "success");
   };
   useEffect(() => {
     toggleMode();
+    // eslint-disable-next-line
   }, [mode]);
-
-  const clrObj = colorArr.find((cl) => cl.type === mode);
 
   return (
     <>
