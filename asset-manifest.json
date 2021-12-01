@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/yagneshdhanani/TextUtils/static/css/main.45979a5e.chunk.css",
+    "main.js": "/yagneshdhanani/TextUtils/static/js/main.4f4a9a2e.chunk.js",
+    "main.js.map": "/yagneshdhanani/TextUtils/static/js/main.4f4a9a2e.chunk.js.map",
+    "runtime-main.js": "/yagneshdhanani/TextUtils/static/js/runtime-main.027aeda6.js",
+    "runtime-main.js.map": "/yagneshdhanani/TextUtils/static/js/runtime-main.027aeda6.js.map",
+    "static/css/2.4659568d.chunk.css": "/yagneshdhanani/TextUtils/static/css/2.4659568d.chunk.css",
+    "static/js/2.8fad2745.chunk.js": "/yagneshdhanani/TextUtils/static/js/2.8fad2745.chunk.js",
+    "static/js/2.8fad2745.chunk.js.map": "/yagneshdhanani/TextUtils/static/js/2.8fad2745.chunk.js.map",
+    "index.html": "/yagneshdhanani/TextUtils/index.html",
+    "static/css/2.4659568d.chunk.css.map": "/yagneshdhanani/TextUtils/static/css/2.4659568d.chunk.css.map",
+    "static/css/main.45979a5e.chunk.css.map": "/yagneshdhanani/TextUtils/static/css/main.45979a5e.chunk.css.map",
+    "static/js/2.8fad2745.chunk.js.LICENSE.txt": "/yagneshdhanani/TextUtils/static/js/2.8fad2745.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.027aeda6.js",
+    "static/css/2.4659568d.chunk.css",
+    "static/js/2.8fad2745.chunk.js",
+    "static/css/main.45979a5e.chunk.css",
+    "static/js/main.4f4a9a2e.chunk.js"
+  ]
+}
