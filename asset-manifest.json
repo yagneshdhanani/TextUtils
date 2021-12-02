@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/yagneshdhanani/TextUtils/static/css/main.45979a5e.chunk.css",
-    "main.js": "/yagneshdhanani/TextUtils/static/js/main.dce1f0b6.chunk.js",
-    "main.js.map": "/yagneshdhanani/TextUtils/static/js/main.dce1f0b6.chunk.js.map",
-    "runtime-main.js": "/yagneshdhanani/TextUtils/static/js/runtime-main.027aeda6.js",
-    "runtime-main.js.map": "/yagneshdhanani/TextUtils/static/js/runtime-main.027aeda6.js.map",
-    "static/css/2.4659568d.chunk.css": "/yagneshdhanani/TextUtils/static/css/2.4659568d.chunk.css",
-    "static/js/2.afa028a2.chunk.js": "/yagneshdhanani/TextUtils/static/js/2.afa028a2.chunk.js",
-    "static/js/2.afa028a2.chunk.js.map": "/yagneshdhanani/TextUtils/static/js/2.afa028a2.chunk.js.map",
-    "index.html": "/yagneshdhanani/TextUtils/index.html",
-    "static/css/2.4659568d.chunk.css.map": "/yagneshdhanani/TextUtils/static/css/2.4659568d.chunk.css.map",
-    "static/css/main.45979a5e.chunk.css.map": "/yagneshdhanani/TextUtils/static/css/main.45979a5e.chunk.css.map",
-    "static/js/2.afa028a2.chunk.js.LICENSE.txt": "/yagneshdhanani/TextUtils/static/js/2.afa028a2.chunk.js.LICENSE.txt"
+    "main.css": "/TextUtils/static/css/main.7864716f.chunk.css",
+    "main.js": "/TextUtils/static/js/main.8b521f6d.chunk.js",
+    "main.js.map": "/TextUtils/static/js/main.8b521f6d.chunk.js.map",
+    "runtime-main.js": "/TextUtils/static/js/runtime-main.b91b2bae.js",
+    "runtime-main.js.map": "/TextUtils/static/js/runtime-main.b91b2bae.js.map",
+    "static/css/2.4659568d.chunk.css": "/TextUtils/static/css/2.4659568d.chunk.css",
+    "static/js/2.ddcda27a.chunk.js": "/TextUtils/static/js/2.ddcda27a.chunk.js",
+    "static/js/2.ddcda27a.chunk.js.map": "/TextUtils/static/js/2.ddcda27a.chunk.js.map",
+    "index.html": "/TextUtils/index.html",
+    "static/css/2.4659568d.chunk.css.map": "/TextUtils/static/css/2.4659568d.chunk.css.map",
+    "static/css/main.7864716f.chunk.css.map": "/TextUtils/static/css/main.7864716f.chunk.css.map",
+    "static/js/2.ddcda27a.chunk.js.LICENSE.txt": "/TextUtils/static/js/2.ddcda27a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.027aeda6.js",
+    "static/js/runtime-main.b91b2bae.js",
     "static/css/2.4659568d.chunk.css",
-    "static/js/2.afa028a2.chunk.js",
-    "static/css/main.45979a5e.chunk.css",
-    "static/js/main.dce1f0b6.chunk.js"
+    "static/js/2.ddcda27a.chunk.js",
+    "static/css/main.7864716f.chunk.css",
+    "static/js/main.8b521f6d.chunk.js"
   ]
 }
