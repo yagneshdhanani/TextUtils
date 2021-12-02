@@ -1,12 +1,14 @@
 import React from "react";
-import { Alert } from "react-bootstrap";
 
 export default function CustomAlert({ alert }) {
   return (
     alert && (
-      <Alert variant={alert.type} dismissible>
-        <h5>{alert.message}</h5>
-      </Alert>
+      <div
+        className={`alert alert-${alert.type} alert-dismissible fade show`}
+        role="alert"
+      >
+        <strong>{alert.message}</strong>
+      </div>
     )
   );
 }

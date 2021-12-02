@@ -46,7 +46,3 @@
   margin-right: 5px;
   cursor: pointer;
 }
-
-#txtArea::placeholder {
-  color: whitesmoke;
-}

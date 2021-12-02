@@ -1,16 +1,12 @@
 import React from "react";
-import { Badge } from "react-bootstrap";
 
-export default function CustomBadge({ type, txt, setMode, ...otherProps }) {
+export default function CustomBadge({ type, txt, setMode, textType }) {
   return (
-    <Badge
-      pill
-      className="pill-style"
-      bg={type}
+    <span
+      className={`badge bg-${type} pill-style ${textType}`}
       onClick={() => setMode(type)}
-      {...otherProps}
     >
       {txt}
-    </Badge>
+    </span>
   );
 }

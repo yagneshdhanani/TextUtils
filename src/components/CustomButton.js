@@ -1,10 +1,13 @@
 import React from "react";
-import { Button } from "react-bootstrap";
 
 export default function CustomButton({ onClick, text }) {
   return (
-    <Button onClick={onClick} className="btn-style" variant="primary">
+    <button
+      type="button"
+      className="btn btn-primary btn-style"
+      onClick={onClick}
+    >
       {text}
-    </Button>
+    </button>
   );
 }
