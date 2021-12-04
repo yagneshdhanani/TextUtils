@@ -2,6 +2,7 @@ import React from "react";
 
 export default function CustomAlert({ alert }) {
   return (
+    // <div style={{ height: "50px" }}>
     alert && (
       <div
         className={`alert alert-${alert.type} alert-dismissible fade show`}
@@ -10,5 +11,6 @@ export default function CustomAlert({ alert }) {
         <strong>{alert.message}</strong>
       </div>
     )
+    // </div>
   );
 }

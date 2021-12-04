@@ -18,9 +18,7 @@ export default function TextForm({ heading, mode, showAlert, clrObj }) {
   };
 
   const handleCopy = () => {
-    let txt = document.getElementById("txtArea");
-    txt.select();
-    navigator.clipboard.writeText(txt.value);
+    navigator.clipboard.writeText(text);
     showAlert("Copied to clipboard", "success");
   };
 
@@ -63,7 +61,7 @@ export default function TextForm({ heading, mode, showAlert, clrObj }) {
   const handleOnClear = () => {
     setText("");
 
-    showAlert("Text has been cleared!", "danger");
+    showAlert("Text has been cleared!", "warning");
   };
 
   return (
@@ -82,7 +80,7 @@ export default function TextForm({ heading, mode, showAlert, clrObj }) {
             onChange={(e) => setText(e.target.value)}
             rows={8}
             style={{
-              backgroundColor: `${clrObj.color}`,
+              backgroundColor: `${clrObj.backgroundColor}`,
               color: mode === "light" ? "black" : "white",
             }}
             placeholder="Enter text here ..."
@@ -90,18 +88,50 @@ export default function TextForm({ heading, mode, showAlert, clrObj }) {
         </div>
       </form>
 
-      <CustomButton onClick={handleOnUppercase} text="Convert to Uppercase" />
-      <CustomButton onClick={handleOnLowercase} text="Convert to LowerCase" />
-      <CustomButton onClick={handleCopy} text="Copy Text" />
-      <CustomButton onClick={handleWordsReverse} text="Reverse all Words" />
-      <CustomButton onClick={handleStringReverse} text="Reverse String" />
-      <CustomButton onClick={handleOnCapital} text="Capitalize Words" />
-      <CustomButton onClick={handleExtraSpaces} text="Remove extra spaces" />
-      <CustomButton onClick={handleOnClear} text="Clear all words" />
+      <CustomButton
+        onClick={handleOnUppercase}
+        disabled={text.length === 0}
+        name="Convert to Uppercase"
+      />
+      <CustomButton
+        onClick={handleOnLowercase}
+        disabled={text.length === 0}
+        name="Convert to LowerCase"
+      />
+      <CustomButton
+        onClick={handleCopy}
+        disabled={text.length === 0}
+        name="Copy Text"
+      />
+      <CustomButton
+        onClick={handleWordsReverse}
+        disabled={text.length === 0}
+        name="Reverse all Words"
+      />
+      <CustomButton
+        onClick={handleStringReverse}
+        disabled={text.length === 0}
+        name="Reverse String"
+      />
+      <CustomButton
+        onClick={handleOnCapital}
+        disabled={text.length === 0}
+        name="Capitalize Words"
+      />
+      <CustomButton
+        onClick={handleExtraSpaces}
+        disabled={text.length === 0}
+        name="Remove Extra Spaces"
+      />
+      <CustomButton
+        onClick={handleOnClear}
+        disabled={text.length === 0}
+        name="Clear all Words"
+      />
 
       <h2 className="my-3">Text Summary</h2>
       <p>
-        <b>{text.split(" ").filter((a) => a !== "").length}</b> words &{" "}
+        <b>{text.split(/\s+/).filter((a) => a !== "").length}</b> words &{" "}
         <b>{text.length}</b> character
       </p>
       <p>
@@ -111,11 +141,7 @@ export default function TextForm({ heading, mode, showAlert, clrObj }) {
         minutes to read
       </p>
       <h2>Preview</h2>
-      <p>
-        {text.length > 0
-          ? text
-          : "Enter text in the above textbox to preview here."}
-      </p>
+      <p>{text.length > 0 ? text : "Noting to preview!!"}</p>
     </div>
   );
 }

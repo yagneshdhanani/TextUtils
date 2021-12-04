@@ -3,22 +3,38 @@ import PropTypes from "prop-types";
 
 // import { Link } from "react-router-dom";
 import CustomBadge from "./CustomBadge";
-import { Container, Nav, Navbar } from "react-bootstrap";
 
-export default function NavBar({ title, mode, setMode, clrObj }) {
-  // const variant = mode === "info" || mode === "light" ? "light" : "dark";
-
+export default function NavBar({ title, setMode }) {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-      <Container>
-        <Navbar.Brand href="#">{title}</Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#">Home</Nav.Link>
-            <Nav.Link href="#">About</Nav.Link>
-          </Nav>
-
+    <nav className="navbar navbar-dark navbar-expand-lg bg-dark">
+      <div className="container-fluid">
+        <a className="navbar-brand" href="#">
+          {title}
+        </a>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            {/* <li className="nav-item">
+              <Link className="nav-link" aria-current="page" to="/">
+                Home
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/about">
+                About
+              </Link>
+            </li> */}
+          </ul>
           <CustomBadge type="primary" setMode={setMode} txt="Blue" />
           <CustomBadge type="secondary" setMode={setMode} txt="Gray" />
           <CustomBadge type="success" setMode={setMode} txt="Green" />
@@ -32,9 +48,9 @@ export default function NavBar({ title, mode, setMode, clrObj }) {
             textType="text-dark"
           />
           <CustomBadge type="dark" setMode={setMode} txt="Dark" />
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+        </div>
+      </div>
+    </nav>
   );
 }
 
