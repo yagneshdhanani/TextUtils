@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-// import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "react-notifications/lib/notifications.css";
 import {
   NotificationContainer,
@@ -13,8 +13,8 @@ import NavBar from "./components/NavBar";
 import TextForm from "./components/TextForm";
 import CustomAlert from "./components/CustomAlert";
 
-// import About from "./components/About";
-// import NotFound from "./components/NotFound";
+import About from "./components/About";
+import NotFound from "./components/NotFound";
 
 function App() {
   const [mode, setMode] = useState("light");
@@ -56,33 +56,32 @@ function App() {
   }, [mode]);
 
   return (
-    <>
-      {/* <Router> */}
+    // <>
+    <Router>
       <NavBar setMode={setMode} title="TextUtils" />
       <CustomAlert alert={alert} />
-      {/* <Routes>
+      <Routes>
         <Route
           exact
           path="/"
-          element={ */}
-      <TextForm
-        heading="Try TextUtils - word counter, character counter, remove extra spaces"
-        mode={mode}
-        showAlert={showAlert}
-        clrObj={clrObj}
-      />
-      {/* }
-        /> */}
-      {/* <Route
+          element={
+            <TextForm
+              heading="Try TextUtils - word counter, character counter, remove extra spaces"
+              mode={mode}
+              showAlert={showAlert}
+              clrObj={clrObj}
+            />
+          }
+        />
+        <Route
           exact
           path="/about"
           element={<About mode={mode} clrObj={clrObj} />}
         />
         <Route path="*" element={<NotFound />} />
-      </Routes> */}
+      </Routes>
       <NotificationContainer />
-      {/* </Router> */}
-    </>
+    </Router>
   );
 }
 
